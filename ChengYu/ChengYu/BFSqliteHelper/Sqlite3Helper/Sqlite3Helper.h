@@ -3,6 +3,8 @@
 //  SharePreference
 //
 //  Created by liudi on 5/29/12.
+//  QQ群:219357847 个人QQ:1003081775
+//  github:https://github.com/zyprosoft
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 

@@ -2,8 +2,9 @@
 //  CYSqliteManager.m
 //  ChengYu
 //
-//  Created by barfoo2 on 13-6-20.
-//  Copyright (c) 2013年 ZYVincent. All rights reserved.
+//  Created by ZYVincent on 13-6-20.
+//  QQ群:219357847 个人QQ:1003081775
+//  Copyright (c) 2013年 ZYProSoft. All rights reserved.
 //
 
 #import "CYSqliteManager.h"
@@ -18,11 +19,13 @@ static CYSqliteManager *_cyInstance = nil;
         
         tempArray = [[NSMutableArray alloc]init];
         
-        NSString *wordDataBase = @"wordDataBase.sqlite";
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        NSString *dbPath = [[paths objectAtIndex:0]stringByAppendingPathComponent:wordDataBase];
+        //用于最初没有成语时候录入用
+//        NSString *wordDataBase = @"wordDataBase.sqlite";
+//        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//        NSString *dbPath = [[paths objectAtIndex:0]stringByAppendingPathComponent:wordDataBase];
         
-       wordDB =  [Sqlite3Helper open:dbPath];
+        NSString *dbPath = [[NSBundle mainBundle]pathForResource:@"wordDataBase" ofType:@"sqlite"];
+        wordDB =  [Sqlite3Helper open:dbPath];
         
         //create table
         [self createWordsTable];

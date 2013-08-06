@@ -2,7 +2,9 @@
 //  PlayTimer.m
 //  FunnyColors
 //
-//  Created by barfoo2 on 13-4-7.
+//  Created by ZYVincent on 13-4-7.
+//  QQ群:219357847 个人QQ:1003081775
+//  github:https://github.com/zyprosoft
 //  Copyright (c) 2013年 FunnyColors. All rights reserved.
 //
 
@@ -97,7 +99,7 @@
         [timer invalidate];//计时已经到了
     }else{
         
-        NSLog(@"update timer ---->%d",usedTime);
+//        NSLog(@"update timer ---->%d",usedTime);
         [updateOwner performSelector:updateSelector withObject:[NSNumber numberWithInt:self.totalTime-usedTime]];//每次更新,花去多少秒
         
     }

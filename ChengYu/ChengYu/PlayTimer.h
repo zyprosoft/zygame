@@ -2,7 +2,9 @@
 //  PlayTimer.h
 //  FunnyColors
 //
-//  Created by barfoo2 on 13-4-7.
+//  Created by ZYVincent on 13-4-7.
+//  QQ群:219357847 个人QQ:1003081775
+//  github:https://github.com/zyprosoft
 //  Copyright (c) 2013年 FunnyColors. All rights reserved.
 //
 

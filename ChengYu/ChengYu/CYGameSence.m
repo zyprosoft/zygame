@@ -2,7 +2,9 @@
 //  CYGameSence.m
 //  ChengYu
 //
-//  Created by barfoo2 on 13-6-17.
+//  Created by ZYVincent on 13-6-17.
+//  QQ群:219357847 个人QQ:1003081775
+//  github:https://github.com/zyprosoft
 //  Copyright (c) 2013年 ZYVincent. All rights reserved.
 //
 
@@ -236,14 +238,14 @@
     CGPoint p = [touch locationInView:[touch view]];
     CGPoint tp = [[CCDirector sharedDirector]convertToGL:p];
     
-    NSLog(@"ture point --->%@",NSStringFromCGPoint(tp));
+//    NSLog(@"ture point --->%@",NSStringFromCGPoint(tp));
     
     CYWordSprite *tSprite = nil;
     for (CYWordSprite *sprite in self.children) {
         
         if (sprite.tag != -1) {
             
-            NSLog(@"tSprite boundingBox--->%@",NSStringFromCGRect(sprite.boundingBox));
+//            NSLog(@"tSprite boundingBox--->%@",NSStringFromCGRect(sprite.boundingBox));
             
             if ([sprite isKindOfClass:[CYWordSprite class]]) {
                 if (CGRectContainsPoint(sprite.boundingBox, tp)) {
