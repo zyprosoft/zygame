@@ -7,7 +7,6 @@
 //
 
 #import "CCLayer.h"
-#import "NSDictionary+MutableDeepCopy.h"
 
 @interface CYHomeSence : CCLayer
 {
